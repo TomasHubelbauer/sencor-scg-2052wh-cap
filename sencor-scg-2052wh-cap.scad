@@ -70,10 +70,10 @@ intersection() {
 }
 
 difference() {
-  cylinder(height, 68 / 2, 68 / 2);
+  cylinder(height / 2, 68 / 2, 68 / 2);
 
   translate([0, 0, .4])
-  cylinder(height, 64 / 2, 64 / 2);
+  cylinder(height / 2, 64 / 2, 64 / 2);
 }
 
 side = 2;
