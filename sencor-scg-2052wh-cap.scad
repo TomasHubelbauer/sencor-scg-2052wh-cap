@@ -62,10 +62,10 @@ intersection() {
   }
 
   group() {
-    translate([0, -outer_radius, 0])
+    translate([-slit_length / 2, -outer_radius, 0])
     cube([slit_length / 2, outer_radius, flap_height]);
 
-    translate([-slit_length / 2, 0, 0])
+    translate([0 / 2, 0, 0])
     cube([slit_length / 2, outer_radius, flap_height]);
   }
 }
