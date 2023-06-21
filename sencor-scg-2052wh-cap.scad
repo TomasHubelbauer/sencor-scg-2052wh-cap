@@ -57,7 +57,8 @@ intersection() {
     cylinder(flap_height, outer_radius, outer_radius);
 
     // The cylinder representing the inner wall of the cap
-    cylinder(flap_height, inner_radius, inner_radius);
+    translate([0, 0, -epsilon])
+    cylinder(flap_height + epsilon * 2, inner_radius, inner_radius);
   }
 
   group() {
