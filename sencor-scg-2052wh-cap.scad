@@ -71,13 +71,13 @@ intersection() {
 }
 
 difference() {
-  cylinder(5, 68 / 2, 68 / 2);
+  cylinder(4, 68 / 2, 68 / 2);
 
   translate([0, 0, .4])
-  cylinder(5, 64 / 2, 64 / 2);
+  cylinder(4, 64 / 2, 64 / 2);
 }
 
-side = 2;
+side = 3;
 translate([0, 0, 1 + side / 2])
 inverted_quarter_torus(side = side, radius = (64 - side) / 2, quadrant = 1, $fn = 100);
 
