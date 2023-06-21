@@ -78,16 +78,16 @@ difference() {
 }
 
 side = 2;
-translate([0, 0, .4 + side / 2])
+translate([0, 0, 1 + side / 2])
 inverted_quarter_torus(side = side, radius = (64 - side) / 2, quadrant = 1, $fn = 100);
 
-translate([0, 0, .4 + side / 2])
+translate([0, 0, 1 + side / 2])
 inverted_quarter_torus(side = side, radius = (inner_diameter - side) / 2, quadrant = 1, $fn = 100);
 
-translate([0, 0, .4 + side / 2])
+translate([0, 0, 1 + side / 2])
 inverted_quarter_torus(side = side, radius = (68 + side) / 2, quadrant = 0, $fn = 100);
 
-cylinder(.4, inner_radius + 2, inner_radius + 2);
+cylinder(1, inner_radius + 2, inner_radius + 2);
 
 translate([0, 0, 2 / 2])
 quarter_torus(side = 2, radius = outer_radius - 2 / 2, quadrant = 1, $fn = 100);
